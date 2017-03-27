@@ -35,12 +35,14 @@
         <receiver
             android:name=".NotificationReceiver"
             android:exported="false">
-            <intent-filter
-                android:priority="-999">
-                <action
-                    android:name="com.robinlian.photogallery.SHOW_NOTIFICATION"/>
+            <intent-filter android:priority="-999">
+                <action android:name="com.robinlian.photogallery.SHOW_NOTIFICATION"/>
             </intent-filter>
         </receiver>
+
+        <activity android:name=".PhotoPageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
     </application>
 
 </manifest>
